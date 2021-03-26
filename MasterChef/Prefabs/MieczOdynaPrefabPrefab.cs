@@ -14,7 +14,7 @@ namespace Questy.Prefabs
 	{
 
 		// Token: 0x06000009 RID: 9 RVA: 0x000025C9 File Offset: 0x000007C9
-		public MieczOdynaPrefab() : base("MieczOdyna", "SwordSilver")
+		public MieczOdynaPrefab() : base("MieczOdyna")
 		{
 
 		}
@@ -50,7 +50,7 @@ namespace Questy.Prefabs
 			component.m_itemData.m_shared.m_secondaryAttack.m_lowerDamagePerHit = false;
 			component.m_itemData.m_shared.m_damages.m_slash = 75f;
 			component.m_itemData.m_shared.m_damages.m_lightning = 40f;
-			Texture2D texture2D = AssetUtils.LoadTexture("Questy/Assets/mieczodyna.png");
+			Texture2D texture2D = AssetUtils.LoadTexture("Questy/Assets/mieczoydna.png");
 			Sprite sprite = Sprite.Create(texture2D, new Rect(0f, 0f, (float)texture2D.width, (float)texture2D.height), Vector2.zero);
 			component.m_itemData.m_shared.m_icons[0] = sprite;
 
