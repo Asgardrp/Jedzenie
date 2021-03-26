@@ -3,7 +3,7 @@ using JotunnLib.Entities;
 using JotunnLib.Utils;
 using UnityEngine;
 
-namespace Questy
+namespace Questy.Prefabs
 {
 	// Token: 0x02000006 RID: 6
 	public class MlotThoraPrefab : PrefabConfig

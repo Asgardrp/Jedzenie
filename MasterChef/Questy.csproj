@@ -34,24 +34,28 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArmorAdmina.cs" />
-    <Compile Include="Iskra.cs" />
-    <Compile Include="OpokaHarvalda.cs" />
-    <Compile Include="SztyletOfiarny.cs" />
-    <Compile Include="PierscienAzalAkira.cs" />
-    <Compile Include="KapturAdmina.cs" />
-    <Compile Include="MieczOdynaPrefab.cs" />
-    <Compile Include="MlotThora.cs" />
-    <Compile Include="PelerynaAdmina.cs" />
+    <Compile Include="Prefabs\ArmorAdminaPrefab.cs" />
+    <Compile Include="Prefabs\IskraPrefab.cs" />
+    <Compile Include="Prefabs\OpokaHarvaldaPrefab.cs" />
+    <Compile Include="Prefabs\SztyletOfiarnyPrefab.cs" />
+    <Compile Include="Prefabs\PierscienAzalAkiraPrefab.cs" />
+    <Compile Include="Prefabs\KapturAdminaPrefab.cs" />
+    <Compile Include="Prefabs\MieczOdynaPrefabPrefab.cs" />
+    <Compile Include="Prefabs\MlotThoraPrefab.cs" />
+    <Compile Include="Prefabs\PelerynaAdminaPrefab.cs" />
     <Compile Include="Questy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RunaOgnia.cs" />
-    <Compile Include="RunaSlonca.cs" />
-    <Compile Include="RunaWody.cs" />
-    <Compile Include="RunaZiemi.cs" />
-    <Compile Include="SpodnieAdmina.cs" />
+    <Compile Include="Prefabs\RunaOgniaPrefab.cs" />
+    <Compile Include="Prefabs\RunaSloncaPrefab.cs" />
+    <Compile Include="Prefabs\RunaWodyPrefab.cs" />
+    <Compile Include="Prefabs\RunaZiemiPrefab.cs" />
+    <Compile Include="Prefabs\SpodnieAdminaPrefab.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="0Harmony, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\0Harmony.dll</HintPath>
+    </Reference>
     <Reference Include="assembly_guiutils, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\libs\assembly_guiutils.dll</HintPath>
@@ -64,9 +68,39 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\libs\BepInEx.dll</HintPath>
     </Reference>
+    <Reference Include="BepInEx.Harmony">
+      <HintPath>..\libs\BepInEx.Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Preloader">
+      <HintPath>..\libs\BepInEx.Preloader.dll</HintPath>
+    </Reference>
+    <Reference Include="HarmonyXInterop">
+      <HintPath>..\libs\HarmonyXInterop.dll</HintPath>
+    </Reference>
     <Reference Include="JotunnLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\libs\JotunnLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Mdb">
+      <HintPath>..\libs\Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb">
+      <HintPath>..\libs\Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Rocks">
+      <HintPath>..\libs\Mono.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.RuntimeDetour, Version=21.1.11.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\MonoMod.RuntimeDetour.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.Utils, Version=21.1.11.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\MonoMod.Utils.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -81,5 +115,6 @@
       <HintPath>..\libs\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

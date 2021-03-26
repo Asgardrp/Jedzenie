@@ -4,11 +4,12 @@ using JotunnLib.Entities;
 using JotunnLib.Managers;
 using JotunnLib.Utils;
 using UnityEngine;
+using Questy.Prefabs;
 
 namespace Questy
 {
 	// Token: 0x0200001B RID: 27
-	[BepInPlugin("hrve.Questy", "Questy", "1.0.0")]
+	[BepInPlugin("hrve.Questy", "Questy", "0.0.1")]
 	[BepInDependency("com.bepinex.plugins.jotunnlib", (BepInDependency.DependencyFlags)1)]
 	public class Questy : BaseUnityPlugin
 	{

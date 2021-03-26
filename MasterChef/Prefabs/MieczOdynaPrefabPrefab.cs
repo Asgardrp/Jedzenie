@@ -5,12 +5,14 @@ using System.Text;
 using UnityEngine;
 using JotunnLib.Entities;
 using JotunnLib.Utils;
+using JotunnLib.Managers;
 
-namespace Questy
+namespace Questy.Prefabs
 {
 	// Token: 0x02000006 RID: 6
 	public class MieczOdynaPrefab : PrefabConfig
 	{
+
 		// Token: 0x06000009 RID: 9 RVA: 0x000025C9 File Offset: 0x000007C9
 		public MieczOdynaPrefab() : base("MieczOdyna", "SwordSilver")
 		{
@@ -48,9 +50,9 @@ namespace Questy
 			component.m_itemData.m_shared.m_secondaryAttack.m_lowerDamagePerHit = false;
 			component.m_itemData.m_shared.m_damages.m_slash = 75f;
 			component.m_itemData.m_shared.m_damages.m_lightning = 40f;
-			Texture2D texture2D = AssetUtils.LoadTexture("Questy/Assets/MieczOdyna.png");
+			Texture2D texture2D = AssetUtils.LoadTexture("Questy/Assets/mieczodyna.png");
 			Sprite sprite = Sprite.Create(texture2D, new Rect(0f, 0f, (float)texture2D.width, (float)texture2D.height), Vector2.zero);
-            component.m_itemData.m_shared.m_icons[0] = sprite;
+			component.m_itemData.m_shared.m_icons[0] = sprite;
 
 		}
 	}
